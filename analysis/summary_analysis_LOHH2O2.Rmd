@@ -7,7 +7,7 @@ output: html_document
 
 ```{r}
 rm( list = ls() );
-setwd("~/github/LOH_H2O2_2016/public/analysis")
+#setwd("~/github/LOH_H2O2_2016/public/analysis")
 ```
 
 # Load data from two previous studies. 
@@ -24,7 +24,7 @@ http://www.ncbi.nlm.nih.gov/pubmed/16516427
 
 ```{r}
  list.files( path="data")
- tb = read.table("data/LOHH2O2_dataset.csv", header=T, sep="\t");
+ tb = read.table("data/021307.summary.by.strain.csv", header=T, sep="\t");
  tb.old = tb;
  labels = names( tb.old );
  tb = tb.old[, c("strain","ARLS","R0","G","CLS","Tc", "Tg","Tmmax","Tbmax", "Td", "Tdmax","TLmax","Lmax", 
