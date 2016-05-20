@@ -1,1 +1,1 @@
-# H2O2LOH_PeerJ2016
+# Data and samples code for Guven et al 2016 Peerj manuscript
