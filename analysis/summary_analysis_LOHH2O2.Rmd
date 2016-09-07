@@ -131,4 +131,23 @@ text( tb3$TgTc.vs.CbCv, tb3$L0.all+0.015, tb3$strain)
 text( 3, 0.28, "p=0.004,R2=0.62")
 ```
 
+# Figure S2. Plot of Cb ~ Cv using averaged values for each strain
+
+```{r}
+m = lm(tb3$CvMean ~ tb3$CbMean)
+summary(m)
+#pdf("FigureS2.pdf", width=7, height=7)
+par(font=2) 
+plot( tb3$CvMean ~ tb3$CbMean, pch=19, col="red", 
+      ylab = "Average Cv",
+      xlab = "Average Cb",
+      main="H2O2 induced cell death and LOH co-vary",
+)
+abline(m, col="blue")
+text( 0.04, 0.13, "p=0.00019,R2=0.77")
+#dev.off()
+
+
+```
+
 
