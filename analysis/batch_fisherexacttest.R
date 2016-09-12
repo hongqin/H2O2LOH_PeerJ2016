@@ -114,7 +114,7 @@ for( i in  1:length(output[,1])){
 }
 
 output$FileList=gsub("_fisher_results_", '', output$FileList)
-write.csv(output,"fisher_tests1tailGreater_summary_by_experiments2016Aug29.csv", row.names = FALSE )
+write.csv(output,"fisher_tests1tailGreater_summary_by_experiments2016Sep12.csv", row.names = FALSE )
 
 sum(output$significant_fishertest)
 sum(output$nonsignificant_fishertest)
